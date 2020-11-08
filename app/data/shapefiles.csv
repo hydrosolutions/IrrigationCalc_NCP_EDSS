@@ -1,0 +1,4 @@
+# pathname is either absolute or relative to main Folder of the APP (ROOT)
+name,file,datapath
+Guantao,data/shapefiles/guantao_chn.shp,data/liveNDVI/Guantao
+Handan,data/shapefiles/handan.shp,data/liveNDVI/Handan

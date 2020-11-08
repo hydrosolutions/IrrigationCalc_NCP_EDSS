@@ -1,0 +1,73 @@
+crop_name,soil_type,reliability_percent,cwd_m3_per_mu
+Winter Wheat,Sand,50,170
+Winter Wheat,Loam,50,165
+Winter Wheat,Clay,50,140
+Winter Wheat,Sand,75,210
+Winter Wheat,Loam,75,200
+Winter Wheat,Clay,75,180
+Maize,Sand,50,55
+Maize,Loam,50,50
+Maize,Clay,50,50
+Maize,Sand,75,110
+Maize,Loam,75,100
+Maize,Clay,75,100
+Cotton,Sand,50,110
+Cotton,Loam,50,100
+Cotton,Clay,50,100
+Cotton,Sand,75,150
+Cotton,Loam,75,140
+Cotton,Clay,75,140
+Apples,Sand,50,120
+Apples,Loam,50,120
+Apples,Clay,50,120
+Apples,Sand,75,150
+Apples,Loam,75,150
+Apples,Clay,75,150
+Pears,Sand,50,150
+Pears,Loam,50,150
+Pears,Clay,50,150
+Pears,Sand,75,210
+Pears,Loam,75,210
+Pears,Clay,75,210
+Wine,Sand,50,100
+Wine,Loam,50,100
+Wine,Clay,50,100
+Wine,Sand,75,150
+Wine,Loam,75,150
+Wine,Clay,75,150
+Peach,Sand,50,120
+Peach,Loam,50,120
+Peach,Clay,50,120
+Peach,Sand,75,140
+Peach,Loam,75,140
+Peach,Clay,75,140
+Cucumber,Sand,50,400
+Cucumber,Loam,50,400
+Cucumber,Clay,50,400
+Cucumber,Sand,75,400
+Cucumber,Loam,75,400
+Cucumber,Clay,75,400
+Tomato,Sand,50,360
+Tomato,Loam,50,360
+Tomato,Clay,50,360
+Tomato,Sand,75,360
+Tomato,Loam,75,360
+Tomato,Clay,75,360
+Vigna Radiata,Sand,50,250
+Vigna Radiata,Loam,50,250
+Vigna Radiata,Clay,50,250
+Vigna Radiata,Sand,75,250
+Vigna Radiata,Loam,75,250
+Vigna Radiata,Clay,75,250
+Vegetables,Sand,50,300
+Vegetables,Loam,50,300
+Vegetables,Clay,50,300
+Vegetables,Sand,75,300
+Vegetables,Loam,75,300
+Vegetables,Clay,75,300
+Roots,Sand,50,250
+Roots,Loam,50,250
+Roots,Clay,50,250
+Roots,Sand,75,250
+Roots,Loam,75,250
+Roots,Clay,75,250

@@ -1,0 +1,593 @@
+key\English\中文
+locale\en_US.UTF-8\zh_CN.UTF-8
+helpinfotext1\"<p><h5>Climate</h5> 
+Meteorological data are one of the most important inputs for crop water demand models. Although organisations like the WMO have standardized collection and calibration methods for their global station network, the data collected by other institutions or from global assimilation products might vary slightly for the same location. Also, a local station may be closer to the area to be assessed. It is therefore essential to compare the data and to be aware of the limitations in accuracy. 
+<br/>
+The Hebei irrigation norm differentiates between irrigation demand for normal years (50% precipitation reliability) and for dry years (75% precipitation reliability). The irrigation calculator allows the computation of the irrigation water demand using the same methods as the Hebei irrigation norm. 
+</p><p>
+<h5>Irrigation Demand Calculator</h5>
+This is the core component of the Irrigation Demand Calculator. The computation of irrigation water demand is based on the CROPWAT model, and depends on crop type, soil type and crop planting dates. CROPWAT is a decision support tool developed by the Land and Water Division of FAO. More information can be found on http://www.fao.org/land-water/databases-and-software/cropwat/en/
+<h6>Input:</h6> 
+Crop type, Soil Type, Planting Date, Irrigation Schedule. In accordance with the Hebei irrigation norm (DB13/T1161.1-2009), the irrigation calculator differentiates between 3 soil types: Loamy sand (sand), sandy loam (loam), and clay. The irrigation schedule defines when or under which conditions the field is irrigated to increase the soil water content. Only 2 irrigation schedules are available (once a month and minimum irrigation):  Two options are available: 1. The field is irrigated such that the soil water content is at field capacity at the end of the month (Once a Month) 2. The field is irrigated such that the water content is always at wilting point (Minimum Irrigation).
+<br/>
+The Hebei irrigation norm (DB13/T1161.1-2009) has defined correction factors for irrigation water demand to account for water losses in the irrigation system and the application of different irrigation technologies (see table below). 
+</p>
+"\"""<p><h5>气候条件</h5> 
+气象数据是计算作物需水量中不可缺少的因素之一。尽管世界气象组织的观测站数据都经过标准化的数据收集和校正，其它机构的站台或者全球同化数据产品对于相同地点的观测数据依旧会有些许差异。因此，使用不同数据前请对比数据源之间的差异，了解所用数据的精度限制。
+<br/>
+河北省灌溉定额按照一般年份（降水保障率为50％）和中等偏旱年份（降水保障率为75％）来界定灌溉需水量。 灌溉计算器也可以选择使用河北省灌溉定额来计算灌溉用水需求。 
+</p><p>
+<h5>灌溉计算器</h5>
+本工具的核心功能在于计算作物的灌溉需水量。灌溉计算器依据FAO的CropWat模型，能够针对不同作物种类在不同土壤条件和种植日期下估算所需要的灌溉用水。CropWat模型由FAO的土地水资源部门开发，更多信息请参考 http://www.fao.org/land-water/databases-and-software/cropwat/en/。
+<h6>输入:</h6> 
+作物类型，土壤类型，种植日期，灌溉方式。灌溉计算器包括了3种土壤类型：壤砂土（砂土），砂壤土（壤土）和粘土，跟河北灌溉定额（DB13 / T1161.1-2009）采用的土壤类型一致。灌溉方式定义了何时或在何种条件下灌溉以增加土壤含水量。 有两种灌溉方式可供选择（月底灌溉和最低限度灌溉）：1. 每月月底灌溉：每月月底灌溉，使土壤含水量达到田间持水量; 2.最低限度灌溉：灌溉使土壤含水量始终处于凋萎点。
+<br/>
+河北省灌溉定额（DB13 / T1161.1-2009）定义了针对灌溉规模和灌溉方式不同而需采用的灌溉定额修正系数（参见下表）。
+</p>
+""
+"
+helpinfotext2\"<p>
+<h6>Output:</h6> 
+<i>Crop Water Deficit:</i> The amount of irrigation water per unit area that is required in a season with average rainfall to provide Crop ET. As in the Hebei irrigation norm (DB13/T1161.1-2009), the irrigation demand for vegetables is for two growth seasons of the same crop within a year. 
+<br/>
+<i>Crop ET:</i> The amount of water that this unit area of field and crop would consume by evapotranspiration given a sufficient water supply (zero water-stress). One part of this amount is supplied by rainfall, the rest by irrigation. An initial soil water storage is taken into account.
+<br/>
+A specific area of a chosen crop with selected settings can be added to the Irrigation Planning Table, where a summary of the total irrigation water demand will be given. The actual irrigation water demand should take account of water losses due to irrigation area and different irrigation technologies, and it is different from the crop water deficit. 
+<h5>Irrigation Planning Table</h5> 
+A summary of all crop field areas that have been added to the irrigation planning table is shown here. At the top of the page, a graph of the monthly irrigation water demand is shown. The table below shows an overview of all crop field areas added so far with their key values. The irrigation water demand for a single field can be compared to the total water demand by activating the checkbox on the right.
+It is possible to save the created Irrigation Planning Table by pressing the button <i>Save Table</i>. The table is then securely stored on the server. For this action, a user account must be created. The saved table can be loaded at a later point from the user account. It is also possible to download the data as Microsoft Excel file.
+<p></p>
+<h5>Live NDVI</h5> 
+The remotely sensed enhanced vegetation index (EVI) gives an indication of the photosynthetic activity of vegetation cover and thus serves as a proxy of the evapotranspiration rate that can be expected from this vegetation cover. A value of zero means no vegetation and a value close to +1 (0.8 - 0.9) indicates the highest possible density of green leaves. 
+<br/>
+Data are collected continuously from MODIS images every 8 days to enable a near real-time monitoring of the EVI. The map shows the most current data collected for a chosen region. A value of a local, circular area can be extracted by clicking on the map. The size of the circle can be changed with the slider in the Map Control Menu. By activating the option “Compute Time Series” the historical course of the vegetation cover for the selected circular area can be computed and compared to the regional average. 
+</p>
+"\"""<p>
+<h6>输出变量:</h6> 
+<i>作物缺水量：</i> 在平水年条件下作物的灌溉需水量。与河北省灌溉定额（DB13 / T1161.1-2009）一样，蔬菜的灌溉需水量是一年内同一作物的两个生长季节。
+<br/>
+<i>作物的蒸散发量：</i> 单位区域内在供水充足的条件下作物的蒸散发量。作物蒸散发过程中消耗的水量一部分由雨水补给，一部分由灌溉和土壤中储存的水分提供。
+<br/>
+所选作物的计算结果可以被提交到“灌溉计划表”。实际灌溉用水量应该考虑不同灌溉规模和灌溉方式的损耗不同，数值会与作物缺水量不同。 
+<h5>灌溉计划表</h5> 
+所有提交的作物计算结果将在这里集中显示。最上方显示作物逐月灌溉需水量柱状图，而下方以表格形式显示每个作物的关键信息。通过激活表格最右边的选项，用户可以比较每种作物的灌溉蓄水量和总蓄水量之间的差别。
+按保存计划表按键就可以保存创建的灌溉计划表。 灌溉计划表可以被存储在服务器上。 用户如果想要保存所创建的灌溉计划表，就需要创建用户帐户。 保存的计划表可以在以后从用户帐户加载。 也可以将数据生成微软的 Excel文件下载。
+<p></p>
+<h5>实时增强型植被指数</h5> 
+通过遥感技术获得的增强型植被指数(EVI)用于指示植被的光合作用强度，可间接用于推算植被的蒸散发量。当指数接近0时表示无植被覆盖，而接近1的时候代表单位区域内绿色植被的覆盖密度较强。
+<br/>
+系统每8天自动收集MODIS数据来保证近实时的观测操作。地图上所显示的结果为选定区域最新EVI数据。用户可以点击地图提取指定半径内的EVI数据。圆圈的半径大小可以通过地图控制菜单下的滑条进行更改。另外，通过激活 “计算时间序列”选项，系统将计算所选区域内的EVI指数时间序列，并与区域均值进行比较。
+</p>
+""
+"
+summary\Summary\数据汇总
+monthlydata\Monthly Irrigation Demand\每月灌溉需求量
+ID\ID\ID
+wmostationlabel\Shenxian (Shandong) (1997-2017)\莘县 (山东省) (1997-2017)
+baxianstationlabel\Baxian (1999-2018)\霸县 (1999-2018)
+cangzhoustationlabel\Cangzhou (1999-2018)\沧州市 (1999-2018)
+huiminstationlabel\Huimin (Shandong) (1999-2018)\惠民县 (山东省) (1999-2018)
+potoustationlabel\Botou (1999-2018)\泊头市 (1999-2018)
+shijiazhuangstationlabel\Shijiazhuang (1999-2018)\石家庄市 (1999-2018)
+dateinputlangvalue\en\zh-CN
+Jan\Jan\一月
+Feb\Feb\二月
+Mar\Mar\三月
+Apr\Apr\四月
+May\May\五月
+Jun\Jun\六月
+Jul\Jul\七月
+Aug\Aug\八月
+Sep\Sep\九月
+Oct\Oct\十月
+Nov\Nov\十一月 
+Dec\Dec\十二月
+uploadtable\Upload Table \上传表格
+doenloadtemplatetable\Download Template/Table\下载模板/表格
+downloadtable\Download Table\下载计划表
+Water_Deficit\Crop Water Deficit normal year [mm]\一般年份作物灌溉需水量 [毫米]
+Water_Deficit_25\Crop Water Deficit dry year [mm]\中等偏旱年份作物灌溉需水量 [毫米]
+cropET\Crop ET [mm]\作物蒸散量 [毫米]
+textcroptype\Crop Type\作物类型
+crop\Crop\作物类型
+areyouarobot\Are you a robot?\你是个机器人么
+ihavemyownmeteodata\I have my own meteo data\使用我自己的数据
+message\Message\信息
+stop\Stop\停止
+maxtemperature\Maximum Temperature [°C]\最高气温  [摄氏度]
+TMAX\Maximum Temperature [°C]\最高气温  [摄氏度]
+mintemperature\Minimum Temperature [°C]\最低气温  [摄氏度]
+TMIN\Minimum Temperature [°C]\最低气温  [摄氏度]
+Winter Wheat\Winter wheat\冬小麦
+tooltip_colormap\Switch the colormap that is used for the displayed data.\切换数据展示的配色方案
+tooltip_timeseriesoraverage\Switch the display of the meteorological data between a timeseries or averaged values for each month of the year.\切换时间序列展示方式（逐月数据或者月平均时间序列）。
+addtoplanningtable\Add to Planning Table\添加入灌溉计划表
+Actions\Actions\可选操作
+regional and modelinformation\Regional and Model Information\区域和模型信息
+regionalaverage\Regional Average\区域平均值
+ET\Reference ET [mm]\参考作物蒸散量 [毫米]
+ETo\Reference ET [mm]\参考作物蒸散量 [毫米]
+cancel\Cancel\取消
+sprinkler\Sprinkler\喷灌
+showinplot\Show\显示
+textsoiltype\Soil Type\土壤类型
+soil\Soil\土壤类型
+Potato\Potato\土豆
+regiontext\Region\地区
+mapdisplay\Map Display\地图展示
+mapcontrol\Map Control\地图设置
+WDSP\Windspeed @ 2m [m/s]\地表2米处风速 [米/秒]
+enhancedvegetationindex\Enhanced Vegetation Index (EVI)\增强型植被指数 (EVI)
+Loam\Loam\壤土
+Loamy Sand\Loamy Sand\壤砂土
+Soy\Soy\大豆
+livevegetationmap\live Vegetation Map\实时植被分布图
+Millet\Millet\小米
+layeeronoff\Layer ON/OFF\層 上/關閉
+Shandong\Shandong\山东省
+help2\Help\帮助
+help\Help/Feedback\帮助/反馈
+average\Average\平均
+averagetemperature\Average Temperature [°C]\平均气温  [摄氏度]
+volumetricaverage\Volumetric Average\加权平均
+averagewindspeed\Average Windspeed [m/s]\平均风速 [米/秒]
+start\Start\开始
+tooltip_computetimeseries\Start or Interrupt the computation of the timeseries. The compuation might take a while depending on the selected length of the timeseries.\开始或者中断时间序列的计算。根据所选的时间跨度计算时间会有所不同。
+currentclimaticvariability\Current Climatic variability\当前气候条件变异率
+Total\Total\总计
+Sum\Total\总计
+SUM\Sum\总和
+yourfeedback\Your Feedback\您的反馈
+youremail\Your e-mail\您的邮箱
+thankyouforthefeedback\Thank you for the feedback!\感谢您提供的反馈
+imnotarobot\I am not a robot\我不是机器人
+radiusofselection\Radius of Selection [m]\所选区域半径 [米]
+submit\Submit\提交
+addcroptoplanner\Add selected Crop to Irrigation Planner\提交所选作物到灌溉计划表中
+changeclimaticvariables\Change climatic variables used to calculate crop irrigation demand\改变用于计算作物灌溉需水量的气候变量
+value\Value\数值
+Data Source\Data Source :\数据源 :
+Data Type\Data Type\数据类型
+nodata2show\There is no data to show. You can add data to the planning table via the Irrigation Demand Calculator or load example data with username=hydrosolutions and password=hydrosolutions\没有数据。数据可以在“灌溉需水量计算器“页面添加到计划表，也可以点击加载用 用户名和密码都是hydrosolutions的试用账户打开示范数据。
+nometeodataselectedmessage\There is no data to show. Please choose a valid source for the meteorological data used in the calculation.\无数据可显示。请选择有效的气象站数据源后重新计算
+SUNH\Sunshine Hours\日照时间 [小时]
+timeseries\Timeseries\时间序列
+lengthoftimeseries\Length of Time Series\时间序列长度
+resultsdisplay\Results Display\显示结果
+resultsdisplay2\Results Display\显示结果
+tooltip_radiusofselection\Change the size of the circle for which the value of the vegetation index is extracted or the timeseries is computed.\更改区域半径。区域内的数据用于提取植被指数或者计算时间序列。
+month\Month\月
+faosource\Source: http://www.fao.org/nr/water/aquacrop.html\来源: http://www.fao.org/nr/water/aquacrop.html
+modissource\Source: MODIS 16-Day Vegetation Indices (MOD13Q1/MYD13Q1)\来源: MODIS 16-Day Vegetation Indices (MOD13Q1/MYD13Q1)
+Peach\Peach\桃子
+archivetext\Archive\档案
+Cotton\Cotton\纯棉花
+modelinformation\App Description \模型信息
+climate\Climate\气候
+climaticvariability\Climatic Variability\气候条件变异率
+meteo\Meteo Source\气象站数据源
+surfacefurrow\Furrow\沟灌
+Peat\Peat\泥炭土
+browse\Browse …\浏览
+tooltip_addtoplanningtable\Add the selected crop with the current parameters to the Irrigation Planning Table. In the following popup window the planting area and irrigation efficiency must be selected.\添加所选作物种类及其参数到灌溉计划表中。请在弹出窗口中制定对应的作物种植面积以及灌溉效率。
+subsurface\Subsurface Drip\渗滤
+drip\Surface Drip\滴灌
+flood\Flood Irrigation\漫灌
+noloss\No losses\不计灌溉损失
+channelliningsw\Surface water, channel lining\地表水, 防渗
+floodsw\Surface water, flooding\地表水, 地面灌溉
+boardirriggw\Groundwater, border irrigation\地下水, 小畦灌溉
+pipeirriggw\Groundwater, pipe irrigation\地下水, 管道灌溉
+dripirriggw\Groundwater, micro irrigation\地下水, 微灌
+applicationefficiency\Factor for irrigation method [-]\工程形式调节系数 [-]
+watersource\Water source\水源
+wssurfacewater\Sufrace water\地表水
+wsgroundwater\Groundwater\地下水
+efficiency\Accumulated correction factor [-]\累计修正系数 [-]
+irrigationplanningtable\Irrigation Planning Table\灌溉计划表
+demandexcel\Irrig. Demand normal year (m3)\一般年份灌溉需水量 (立方米)
+demandexcel_25\Irrig. Demand dry year (m3)\中等偏旱年份灌溉需水量 (立方米)
+demand\Irrigation Demand normal year [m3]\一般年份灌溉需水量 [立方米]
+demand_25\Irrigation Demand dry year [m3]\中等偏旱年份灌溉需水量 [立方米]
+norm_50\Irrigation Norm normal year [m3]\一般年份灌溉定额 [立方米]
+norm_75\Irrigation Norm dry year [m3]\中等偏旱年份灌溉定额 [立方米]
+irrigationdemandcalculator\Irrigation Demand Calculator\灌溉需水量计算器
+cklickthesubmitbutton\Click the Submit button to update the data\点击提交更新数据
+Maize\Summer maize\夏玉米
+Switzerland\Switzerland\瑞士
+Sweet Melon\Sweet melon\甜瓜
+sending\Sending\發出
+relativehumidity\Relative Humidity [%]\相对湿度 [%]
+HUM\Relative Humidity [%]\相对湿度 [百分比]
+Sand\Sand\砂土
+Sandy Loam\Sandy Loam\砂壤土
+Sandy Clay\Sandy Clay\砂质粘土
+Sandy Clay Loam\Sandy Clay Loam\砂质黏壤土
+OK\OK\确定
+plantingdate\Planting Date\种植日期
+plantingarea\Planting Area [667 m2]\种植面积 [亩]
+pipe\Pipe\管道
+Silt\Silt\粉土
+Silty Loam\Silty Loam\粉砂壤土
+Silty Clay\Silty Clay\粉砂粘土
+Silty Clay Loam\Silty Clay Loam\粉砂黏壤土
+Sweet Potato\Sweet Potato\红薯
+Vigna Radiata\Beans (all kinds)\豆类 (包括各类豆角)
+backgroundinformation\Background Information\背景信息
+natural\Natural Color\自然色
+Peanut\Peanut\花生
+Apples\Apple tree\苹果树
+Wine\Grapes\葡萄
+Vegetables\Leaf vegetables (incl. cabbage, celery, kale, fennel, leeks, etc.)\叶类 (包括白菜、芹菜、甘蓝、茴香、韭菜等)
+Roots\Root veetables (incl. white radish, carrots, etc.)\根类 (包括白萝卜、胡萝卜等)
+canalloamshort\Canal, Loam, <200m\衬砌渠道， 壤土，<200 米
+canalloammedium\Canal, Loam, 200m-2000m\衬砌渠道， 壤土，200 - 2000 米
+canalclayshort\Canal, Clay, <200m\衬砌渠道， 黏土，<200 米
+canalclaylong\Canal, Clay, >2000m\衬砌渠道， 黏土，> 2000米
+canalclaymedium\Canal, Clay, 200m-2000m\衬砌渠道， 黏土，200 - 2000 米
+canalloamlong\Canal, Loam, >2000m\衬砌渠道，壤土，> 2000米
+canalsandshort\Canal, Sand, <200m\衬砌渠道，沙土， <200 米
+canalsandmedium\Canal, Sand, 200m-2000m\衬砌渠道，沙土， 200 - 2000 米
+canalsandlong\Canal, Sand, >2000m\衬砌渠道，沙土，> 2000米
+canallinedshort\Canal, Lined, <200m\衬砌渠道，混凝土， <200 米
+canallinedlong\Canal, Lined, >2000m\衬砌渠道，混凝土，> 2000米
+canallinedmedium\Canal, Lined, 200m-2000m\衬砌渠道，混凝土，200 - 2000 米
+largesw\Surface water, >30·10^4 mu\地表水, >30万亩 
+mediumsw\Surface water, 1-30·10^4 mu\地表水, 1-30万亩
+smallsw\Surface water, <1·10^4 mu\地表水, <1万亩
+largegw\Groudwater, > 200 mu\地下水, >200亩
+mediumgw\Groundwater, 100-200 mu\地下水, 100-200亩
+smallgw\Groundwater, <100 mu\地下水, <100亩
+computetimeseries\Compute Time Series\计算时间序列
+tooltip_lengthoftimeseries\Define the number of past data sets that shall be included in the computation of the timeseries: e.g. 10 datasets equal 80 days into the past\请制定用于计算时间序列的过去数据组数。10组数据相当于过去80天。
+tooltip_plantingarea\Define the area on which the chosen crop is planted. A larger area results in a higher irrigation water demand.\请指定作物的种植面积。面积越大所需要的总灌溉水量越多。
+tooltip_applicationefficiency\Choose the irrigation method that is used for this crop and field. Use the slider below to set an individual value for the factor related to the irrigation method. See “Help” for more detailed information.\请选择作物的灌溉方式。使用下方的滑块进行赋值。有关更多详细信息，请参阅“帮助”。
+tooltip_conveyanceefficiency\Choose the size of the farm and the water source. Use the slider below to set an individual value for the factor related to farm size.  See “Help” for more detailed information.\选择灌溉水源和灌溉面积。 使用下面的滑块设定规模调节系数。 有关更多详细信息，请参阅“帮助”。
+pleaseenteryourfeedback\Please enter your feedback\请输入您的反馈信息
+tooltip_croptype\Select the type of crop. This influences the rate of evapotranspiration and soil water uptake. The model parameters for each crop type are based on FAO data. See “Help” for more information.\请选择作物种类。作物种类影响蒸散发以及取水量。每种作物的参数参考FAO的数据库。详情请见“帮助”文档。
+tooltip_soiltype\Select the type of soil. This influences the water balance within the soil layer. The model parameters for each soil type are based on FAO data. See “Help” for more information.\请选择土壤类型。土壤类型影响土壤层的水平衡。各类土壤的参数参考FAO数据库。详情请见“帮助”文档。
+tooltip_meteochoice\Select the source of meteorological data that the model calculation is based on. Consult the Tab “Climate” for a comparison of these data.\请选择气象数据来源。请通过查阅“气象”标签栏比较不同数据源的数据。
+tooltip_timeseriesoraverageselector\Select the source of the meteorological data and the datatype to be displayed. Some combinations are not available and the respective choices will be grayed out.\请选择用于展示的气象数据来源和变量。灰色表示当前选择无效。
+sourcemeteodata\Please choose the source of the meteorological data which will be used for the calculation\请选择用于计算需水量的气象数据源
+tooltip_plantingdate\Select the date when the crop is planted. The total growth duration is estimated according to the type of crop.\请选择种植时间。作物的生长期将根据作物种类自动计算。
+subject\Subject\课题
+Clay\Clay\粘土
+Clay light\Clay light\轻质粘土
+enterclimatedata\Enter Climate Data\输入气候数据
+theprovidedemailisnotvalid\The provided e-mail is not valid.\输入的邮箱信息无效
+conveyanceefficiency\Correction for irrigation area [-]\规模调节系数 [-]
+tooltip_computetimeseriesyes\Activate the option to calculate a timeseries of the vegetation index for the selected area\选中该选项后，系统将计算所选取区域植被指数的时间序列。
+selection\Selection\选择
+select\Select\选择
+selectparameters\Select Parameters\选择参数
+Xingtai\Xingtai\邢台市
+Handan\Handan\邯郸市
+dateofacquisition\Date of Acquisition\采集时间
+PRCP\Precipitation normal year [mm]\一般年份降水 [毫米]
+PRCP_25\Precipitation dry year [mm]\中等偏旱年份降水 [毫米]
+precipitation_mm\Precipitation [mm]\降雨量 [毫米]
+WETD\Number of Wet Days\雨天天数
+area\Area [667 m2]\面积 [亩]
+colormap\Colormap\颜色表
+Guantao County\Hebei Heilonggang Low Planes\河北黑龙港低平面
+Guantao\Guantao\馆陶县
+backgroundinfotext\<p>The irrigation calculator was initially designed for Guantao county in the Hebei province. It has been up-scaled to include all counties of the Heilonggang Low Plains of Hebei province, for which the same irrigation norms apply according to the Hebei irrigation norm DB13T/116.1-2009.</p><p>Estimating irrigation water demand is crucial to plan irrigation schedules and to optimize water use efficiency accordingly. This online platform provides a flexible way for Guantao’s stakeholders to quickly look into irrigation water requirements as a function of crop type, soil type and planting date. It allows to add up the individual water demands of all areas with a specific crop and irrigation type to obtain the water requirements of the whole county or a subset thereof in a planning table. The calculation routine is based on FAO's CropWat model (see more information on the <i>Help</i> tab). </p><p> This tool was developed by hydrosolutions ltd. in Zurich, Switzerland. For questions or queries please fill the questionnaire under <i>Help</i> tab to contact us, or visit our website </p>\灌溉计算器最初是为河北省馆陶县设计的。现扩大到河北省黑龙港低平原地区的所有灌溉用水定额跟馆陶县一样的县（具体见河北灌溉规范DB13T / 116.1-2009）。<br/><br/> 如何估计作物的灌溉需求对于制定灌溉计划至关重要，同时也有利于优化灌溉用水效率。此在线平台旨在为馆陶县水利部门的决策者们提供一个简单易用的工具，能够快速针对不同作物、土壤类型以及种植时间计算相应的灌溉需水量。所有的计算公式基于联合国农业和粮食组织(FAO) 的CropWat模型（详情请参考“帮助”栏）。<br/><br/> 本工具由瑞士苏黎世hydrosolutions公司研发。如有任何疑问，欢迎填写“帮助”栏的用户信息来联系我们或者访问我公司的网站。
+guantaomap\Guantao Map\馆陶县地图
+guantaostationlabel\Guantao Meteo Station (2000-2019)\馆陶县气象观测站 (2000-2019)
+guantaoirrigationcalculator\Guantao Irrigation Calculator\馆陶县灌溉计算器
+highcontrast\High Contrast\高对比度
+Sorghum (Grain)\Sorghum (Grain)\高粱
+Cucumber\Cucurbitaceae - Cucumber\瓜类 (以黄瓜为代表)
+Clay Loam\Clay Loam\黏壤土
+WND\Wind Speed [m/s]\风速 [米/秒]
+showsoilwaterdepletion\Show Root Zone Depletion\显示根系区耗水量
+wiltingpoint\Wilting Point [mm]\凋萎点 [毫米]
+delete\Delete\删除
+Dr\Root Zone Depletion [mm]\根系区耗水量 [毫米]
+WSbar_title\Root Zone Depletion\根系区耗水量
+volumeinmm\Amount [mm]\水量 [毫米]
+irrigationstrategy\Irrigation Schedule\灌溉方式
+minimum\Minimum irrigation\最低限度灌溉量
+maximum\Maximum irrigation\最大限额灌溉量
+threshold\At Wilting Point\在凋萎点灌溉
+monthly\Once a month\一个月一次
+dateformatxlsx\[month.day.year]\[月.天.年]
+CROPDAYS\Cropdays\生长天数
+climwatlabel\CLIMWAT FAO Handan (1971-2000)\CLIMWAT FAO 邯郸（1971-2000）
+Irrigation\Irrigation [mm]\灌溉水量 [毫米]
+yourmailcouldnotbesend\Your mail could not be sent. Make sure to give a valid e-mail adress\您的邮件无法发送。 请提供有效的电子邮件地址
+ETc\Crop ET [mm]\作物蒸散量 [毫米]
+bringdotsinline\Find the slider position for which all dots are in a line\移动滑块让所有的点都在一条线上
+meteodata\Meteo Data Source\气象数据
+PRCPeff\Effective Precipitation normal year [mm]\一般年份有效降水量 [毫米]
+PRCPeff_25\Effective Precipitation dry year [mm]\中等偏旱年份有效降水量 [毫米]
+tooltip_archive\Choose the acquisition date of the displayed data. The most current data set is on top.\选择显示数据的采集日期。 最新的数据在最上面。
+createnewuser\Create new user\新用户
+storetable\Save Planning Table\保存计划表
+username\Username\用户名
+password\Password\密码
+repeatpassword\Repeat Password\重复密码
+emailverificationcode\email verification code\电子邮件验证码
+usernameexists\Username already exists!\用户名已存在！
+passwordsarenotidentical\Passwords are not identical!\密码不相同！
+wrongverificationcode\The verification code is wrong!\验证码错误！
+loadtable\Load Planning Table\加载计划表
+usernameorpasswordiswrong\The username or the password is wrong!\用户名或密码错误！
+usernameemptyorspecial\Username must not be empty or contain any special character like ? & ~\用户名不能为空或含有任何特殊字符？ ＆〜
+passwordempty\Password field is empty\密码字段为空
+-\-\-
+label\Label\标签
+unselected\Total\全面
+downloadCropSoilCoefficients\Crop&Soil-Coefficients\下载作物和土壤参数
+cleartable\Clear Table\清空计划表
+Potato (Autumn)\Potato (Autumn)\马铃薯（秋）
+Potato (Spring)\Potato (Spring)\马铃薯（春）
+Tomato\Solanaceae (incl. tomato, eggplant, green pepper, etc.)\茄科类 (包括番茄、茄子、青椒等)
+Pears\Pear tree\梨树
+pleaseEditTableText\Edit station properties and climate data in table below (you may copy-paste table data from excel), then click the recalculate button:\在下表输入气象站和气象数据 (表格数据可以从Excel文件里复制粘贴)，然后点击"重新计算"键:
+stationLongitudeText\Longitude:\经度:
+stationLatitudeText\Latitude:\纬度: 
+stationAltitudeText\Altitude:\高程:
+userstationlabel\User specified climate data\用户自定义的气象数据
+MONTH\Month\月份
+category\Category\类别
+factor\Factor\因素
+MASTERREGION\NCP\华北平原
+Anguo\Anguo\安国市
+Anping\Anping\安平县
+Anxin\Anxin\安新县
+AnyangShi\Anyang Shì\安阳市
+AnyangXian\Anyang Xiàn\安阳县
+Ba\Ba\霸县
+Baixiang\Baixiang\柏乡县
+Baodi\Baodi\宝坻区
+Baoding\Baoding\保定
+Beichen\Beichen\北辰区
+Beijing\Beijing\北京|北京
+Binxian\Bingzhou Shi\滨州市
+Bo_ai\Bo'ai\博爱县
+Boxing\Boxing\博兴县
+Boye\Boye\博野县
+Cang\Cang\沧县
+Cangzhou\Cangzhou\沧州
+Cao\Cao\曹县
+Changle\Changle\昌乐县
+Changli\Changli\昌黎县
+Changping\Changping\昌平区
+Changqing\Changqing\长清区
+Changyi\Changyi\昌邑市
+Changyuan\Changyuan\长垣县
+Cheng_an\Cheng'an\成安县
+Chengwu\Chengwu\成武县
+Chiping\Chiping\茌平县
+Ci\Ci\磁县
+DachangHui\Dachang Hui\大厂回族自治县
+Dagang\Dagang\大港区
+Daicheng\Daicheng\大城县
+Daming\Daming\大名县
+Daxing\Daxing\大兴区
+Dezhou\Dezhou\德州
+Ding\Dingzhou\定州
+Dingtao\Dingtao\定陶县
+Dingxing\Dingxing\定兴县
+Dong_e\Dong'e\东阿县
+Dongguang\Dongguang\东光县
+Dongli\Dongli\东丽区
+Dongming\Dongming\东明县
+Dongping\Dongping\东平县
+Dongying\Dongying\东营区
+Fangshan\Fangshan\房山区
+Fanxian\Fanxian\范县
+Feicheng\Feicheng\肥城市
+Feixiang\Feixiang\肥乡县
+Fengfengkuang\Fengfengkuang\峰峰矿区
+Fengnan\Fengnan\丰南区
+Fengqiu\Fengqiu\封丘县
+Fengrun\Fengrun\丰润区
+Fucheng\Fucheng\阜城县
+Funing\Funing\抚宁县
+Fuping\Fuping\阜平县
+Gaocheng\Gaocheng\藳城市
+Gaoqing\Gaoqing\高青县
+Gaotang\Gaotang\高唐县
+Gaoyang\Gaoyang\高阳县
+Gaoyi\Gaoyi\高邑县
+Gu_an\Gu'an\固安县
+Guan\Guan\冠县
+Guangping\Guangping\广平县
+Guangrao\Guangrao\广饶县
+Guangzong\Guangzong\广宗县
+Gucheng\Gucheng\故城县
+Haixing\Haixing\海兴县
+HandanShi\Handan shì\邯郸市
+HandanXian\Handan Xiàn\邯郸县
+Hangu\Hangu\汉沽区
+Hebi\Hebi\鹤壁
+Hejian\Hejian\河间市
+Hekou\Hekou\河口区
+Hengshui\Hengshui\衡水市
+Heze\Heze\菏泽市
+Houjia\Huojia\获嘉县
+Hua\Hua\滑县
+Huairou\Huairou\怀柔区
+Huanghua\Huanghua\黄骅市
+Huantai\Huantai\桓台县
+Huelu\Luquan District\鹿泉区
+Huimin\Huimin\惠民县
+Huixian\Huixian\辉县市
+Ji\Ji\蓟县
+Jiaohe\Jiaohe\交河县
+Jiaozuo\Jiaozuo\焦作
+Jiaxiang\Jiaxiang\嘉祥县
+Jinan\Jinan\济南区
+Jing\Jing\景县
+Jinghai\Jinghai\静海县
+Jingjing\Jingjing\井陉县
+Jining\Jining\济宁
+Jinxiang\Jinxiang\金乡县
+Jiyang\Jiyang\济阳县
+Jize\Jize\鸡泽县
+Juancheng\Juancheng\鄄城
+Julu\Julu\巨鹿县
+Juye\Juye\巨野县
+Kaifeng\Kaifeng\开封县
+KaifengXian\Kaifeng Xiàn\开封县
+Kenli\Kenli\垦利县
+Laishui\Laishui\涞水县
+Laiwu\Laiwu\莱芜市
+Laiyuan\Laiyuan\涞源县
+Lankao\Lankao\兰考县
+Leling\Leling\乐陵市
+Leting\Leting\乐亭县
+Li\Li\蠡县
+Liangshan\Liangshan\梁山县
+Liaocheng\Liaocheng\聊城
+Lijin\Lijin\利津县
+Lin\Linzhou Shi\林州市
+Lincheng\Lincheng\临城县
+Ling\Ling\陵县
+Lingshou\Lingshou\灵寿县
+Linqing\Linqing\临清市
+Linqu\Linqu\临朐县
+Linxi\Linxi\临西县
+Linyi\Linyi\临邑县
+Linzhang\Linzhang\临漳县
+Longfang\Langfang\廊坊
+Longyao\Longyao\隆尧县
+Luan\Luan\滦县
+Luancheng\Luancheng\栾城县
+Luannan\Luannan\滦南县
+Lulong\Lulong\卢龙县
+Mancheng\Mancheng\满城县
+Meng\Mengzhou\孟州市
+MengcunHui\Mengcun Hui\孟村回族自治县
+Mentougou\Mentougou\门头沟区
+Miyun\Miyun\密云县
+Nangong\Nangong\南宫市
+Nanhe\Nanhe\南和县
+Nanle\Nanle\南乐县
+Nanpi\Nanpi\南皮县
+Neihuang\Neihuang\内黄县
+Neiqiu\Neiqiu\内丘县
+Ninghe\Ninghe\宁河县
+Ningjin\Ningjin\宁晋县&宁津县
+Ningyang\Ningyang\宁阳县
+Pinggu\Pinggu\平谷区
+Pingshan\Pingshan\平山县
+Pingxiang\Pingxiang\平乡县
+Pingyin\Pingyin\平阴县
+Pingyuan\Pingyuan\平原县
+PuyangShi\Puyang Shì\濮阳市
+PuyangXian\Puyang Xiàn\濮阳县
+Qi\Qi\淇县
+Qian_an\Qian'an\迁安市
+Qianxi\Qianxi\迁西县
+Qihe\Qihe\齐河县
+Qing\Qing\青县
+Qingfeng\Qingfeng\清丰县
+Qinghe\Qinghe\清河县
+Qinglong\Qinglong\青龙县
+QingYuan\Qingyuan\清苑区
+Qingyun\Qingyun\庆云县
+Qingzhou\Qingzhou\青州市
+Qinhuangdao\Qinhuangdao\秦皇岛
+Qinyang\Qinyang\沁阳市
+Qiu\Qiu\邱县
+Qufu\Qufu\曲阜市
+Quyang\Quyang\曲阳县
+Quzhou\Quzhou\曲周县
+Raoyang\Raoyang\饶阳县
+Ren\Ren\任县
+Renqiu\Renqiu\任丘市
+Rongcheng\Rongcheng\容城县
+Sanhe\Sanhe\三河市
+Shahe\Shahe\沙河市
+Shan\Shan\单县
+Shanghe\Shanghe\商河县
+She\She\涉县
+Shen\Shenzhou\深州市
+Shenxian\Shenxian\莘县
+Shenze\Shenze\深泽县
+Shijiazhuang\Shijiazhuang\石家庄
+Shouguang\Shouguang\寿光市
+Shulu\Xinji\辛集
+Shunyi\Shunyi\顺义区
+Sishui\Sishui\泗水县
+Suning\Suning\肃宁县
+TaiAn\Tai An\泰安
+Taiqian\Taiqian\台前县
+Tang\Tang\唐县
+Tanggu\Tanggu\塘沽区
+Tanghai\Tanghai\唐海县
+Tangshan\Tangshan\唐山市
+Tangyin\Tangyin\汤阴县
+Teng\Tengzhou\滕州市
+Tianjin\Tianjin\天津
+Tongzhou\Tongzhou\通州区
+Wan\Shunping\顺平县
+Wangdu\Wangdu\望都县
+Wei\Wei\魏县
+WeifangShi\Weifang Shì\潍坊市
+WeifangXian\Weifang Xiàn\潍坊市
+Weishan\Weishan\微山县
+Wen_an\Wen\温县
+Wen\Wen'an\文安县
+Wenshang\Wenshang\汶上县
+Wu_an\Wu'an\武安市
+Wucheng\Wucheng\武城县
+Wudi\Wudi\无棣县
+Wuji\Wuji\无极县
+Wuqiang\Wuqiang\武强县
+Wuqiao\Wuqiao\吴桥县
+Wuqing\Wuqing\武清区
+Wuyi\Wuyi\武邑县
+Wuzhi\Wuzhi\武陟县
+Xiajin\Xiajin\夏津县
+Xian\Xian\献县
+Xianghe\Xianghe\香河县
+Xincheng\Gaobeidian\高碑店
+XingtaiShi\Xingtai shì\邢台县
+XingtaiXian\Xingtai Xiàn\邢台县
+Xingtang\Xingtang\行唐县
+Xingyang\Xingyang\荥阳市
+Xinhe\Xinhe\新河县
+Xinle\Xinle\新乐市
+Xinwen\Xintai\新泰市
+XinxiangShi\Xinxiang Shì\新乡市
+XinxiangXian\Xinxiang Xiàn\新乡县
+Xiong\Xiong\雄县
+Xiqing\Xiqing\西青区
+Xiuwu\Xiuwu\修武县
+Xun\Xun\浚县
+Xushui\Xushui\徐水县
+Yanggu\Yanggu\阳谷县
+Yangxin\Yangxin\阳信县
+Yanjin\Yanjin\延津县
+Yanqing\Yanqing\延庆县
+Yanshan\Yanshan\盐山县
+Yanzhou\Yanzhou\兖州市
+Yi\Yi\易县
+Yiyuan\Yiyuan\沂源县
+Yongnian\Yongnian\永年县
+Yongqing\Yongqing\永清县
+Yuanshi\Yuanshi\元氏县
+Yuanyang\Yuanyang\原阳县
+Yucheng\Yucheng\禹城市
+Yuncheng\Yuncheng\郓城县
+Yutai\Yutai\鱼台县
+Yutian\Yutian\玉田县
+Zanhuang\Zanhuang\赞皇县
+Zaoqiang\Zaoqiang\枣强县
+Zhangqiu\Zhangqiu\章丘市
+Zhanhua\Zhanhua\沾化县
+Zhao\Zhao\赵县
+Zhengding\Zhengding\正定县
+Zhengmou\Zhengzhou\郑州
+Zhengzhou\Zhongmou\中牟县
+Zhuo\Zhuozhou\涿州
+Zibo\Zibo\淄博
+Zichuan\Zichuan\淄川区
+Zouping\Zouping\邹平县
+Zouxian\Zoucheng\邹城市
+Zunhua\Zunhua\遵化市
+helpinfotext3\Write to: ic underline help at hydrosolutions point ch\Write to: ic underline help at hydrosolutions point ch

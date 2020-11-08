@@ -1,0 +1,7 @@
+type,eff
+noloss,1
+channelliningsw,0.92
+floodsw,1.0000001
+boardirriggw,0.95
+pipeirriggw,0.88
+dripirriggw,0.50

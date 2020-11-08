@@ -1,0 +1,8 @@
+type,eff
+noloss,1.00
+largesw,1.12
+mediumsw,1.05
+smallsw,1.000000001
+largegw,1.15
+mediumgw,1.07
+smallgw,1.000001
