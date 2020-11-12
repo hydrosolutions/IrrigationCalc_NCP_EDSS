@@ -22,9 +22,12 @@ library(xts)
 #library(randomcoloR)
 library(RSQLite)
 library(reshape)
+library(showtext)
 
 source("bin/ETmodel.R", chdir=T)
 source("bin/waterbalancemodel.R", chdir=T)
+
+showtext_auto()
 
 ## Read db.sql for liveNDVI data
 data_db <- dbConnect(drv = RSQLite::SQLite(), dbname="data-ndvi/heilonggang-ndvi.sql")
