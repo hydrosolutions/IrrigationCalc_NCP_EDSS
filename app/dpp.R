@@ -6,7 +6,7 @@
 packages <- c("shiny","ggplot2", "plyr", "leaflet", "raster", "rgdal", "dygraphs", 
 			"xts", "zoo", "reshape2", "DT", "shinyjs", "rJava", "xlsxjars", "xlsx", "shinythemes", 
 			"shinyBS", "rhandsontable", "scales", "tools", "openssl", 
-			"RSQLite", "reshape")
+			"RSQLite", "reshape", "showtext")
 
 if (length(setdiff(packages, rownames(installed.packages()))) > 0) {
   install.packages(
